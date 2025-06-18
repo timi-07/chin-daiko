@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Chin Daiko</title>
+    <link rel="icon" type="image/x-icon" href="taikologo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    </ul>
+        <h1 class="title">CHIN DAIKO</h1>
+    <div class = "wrapper">
+    <header>
+        <nav>
+            <ul class="navHolder">
+                <ul class="navLeft">
+                    <li class="navItem"><a href="index.html">Home</a></li>
+                    <li class="navItem"><a href="gallery.html">Gallery</a></li>
+                </ul>
+                <li><img id="chinLogo" src ="taikologo.png"></li>
+                <ul class="navRight">
+                    <li class="navItem"><a href="events.html" >Events</a></li>
+                    <li class="navItem"><a href="index.html#contact-section">Contact Us</a></li>
+                </ul>
+            </ul>
+        </nav>
+        <!-- <ul class="dropdown-holder">
+            <li class="burger-menu"><span><i class="fa-solid fa-bars fa-2x"></i></span></li>
+        </ul> -->
+        <button class="dropDownButton"><i class="fa-solid fa-bars fa-2x"></i></button>
+        <ul class = "dropDown">
+        </ul>
+    </header>
+    <section class = "main">
+        <div class="aboutUs">
+             <h2 class="aboutUsTitle">About Us</h2>
+             <div class="aboutUsBody">
+                <p class="aboutUsText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <img id="aboutUsImage" src="https://yenra.com/images/chin-daiko.jpg">
+             </div>
+        </div>
+    </section>
+
+    <section id="contact-section">
+        <div class="contact-intro">
+            <h2 class="contact-title">Contact US</h2>
+            <p class="contact-description">
+                Contact Using the form below or Email 
+            </p>
+        </div>
+
+        <form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+
+            <input type="hidden" name="access_key" value="4eb86fb8-fd59-4d1e-867f-774b309ba22c" />
+            <!-- <input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" /> -->
+            <input type="hidden" name="from_name" value="My Website" />
+        <!-- More custom ization options available in the docs: https://docs.web3forms.com -->
+
+            <div class="form-group-container">
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input id="name" name="name" class="form-input" placeholder="Your name" type="text" required/>
+                </div>
+                <div class="form-group">
+                    <label for="subject" class="form-label">Subject</label>
+                    <input id="subject" name="subject" class="form-input" placeholder="Subject" type="text" required/>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input id="email" name="email" class="form-input" placeholder="Your email" type="email" required/>
+                    </div>
+                <div class="form-group">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789" type="text" />
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-textarea" id="message" name="message" placeholder="Your message" required></textarea>
+                </div>
+            </div>
+            <button class="form-submit" type="submit">Send Message</button>
+        </form>
+    </section>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
